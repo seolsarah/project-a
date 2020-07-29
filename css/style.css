@@ -1,0 +1,182 @@
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+    padding: 0 16px;
+}
+img:hover {
+    opacity: 0.5;
+}
+h2 {
+   margin-top: 10px;
+   margin-bottom: 0;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+   font-size: 25px;
+}
+h2:hover {
+    opacity: 0.5;
+}
+p, h3 {
+    margin: 5px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+.fourth, .fifth, .sixth, .seventh {
+    max-width: 100%;
+    height: auto;
+    padding: 0 16px;
+}
+/* Top Menu
+---------------------------*/
+.menu-top {
+    top: 0;
+}
+.logo-center {
+    text-align: center;
+    display: block;  
+}
+.hamburger-bar {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 40px;
+}
+.menu-right {
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;   
+}
+.search {
+    margin-left: 16px;    
+}
+/* Contents
+---------------------------*/
+#sort {
+    display: inline-block; 
+    margin: 15px 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    border-color: white;
+}
+.page-content {
+    padding: 8px 16px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.products {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    padding: 0 8px;
+}
+.top-sellers {
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+    margin: 7px 0;
+}
+/* First product
+---------------------------*/
+.first-product {
+    vertical-align: middle;
+}
+.first-color-one {
+    color: lavender;
+}
+.first-color-two {
+    color: peru;
+}
+/* Second product
+---------------------------*/
+.second-product {
+     vertical-align: middle;
+}
+.second-color-one {
+    color: lightseagreen;
+}
+.second-color-two {
+    color: burlywood;
+}
+.second-color-three {
+    color: slategrey;
+}
+/* Third product
+---------------------------*/
+.third-product {
+    vertical-align: middle;
+}
+.third-color-one {
+    color: whitesmoke;
+}
+.third-color-two {
+    color: mistyrose;
+}
+.third-color-three {
+    color: darkcyan;
+}
+/* Fourth & Fifth product
+---------------------------*/
+.fourth-fifth-product {
+    width: 50%;
+    float: left;
+}
+.fourth-colors {
+    display: block;
+}
+.fourth-color-one {
+    color: black;
+}
+.fourth-color-two {
+    color: saddlebrown;
+}
+.fifth-colors {
+    display: block;
+}
+.fifth-color-one {
+    color: pink;
+}
+.fifth-color-two {
+    color: beige;
+}
+/* Sixth & Seventh product
+---------------------------*/
+.sixth-seventh-product {
+    width: 50%;
+    float: right;
+}
+.sixth-colors {
+    display: block;
+}
+.sixth-color-one {
+    color: pink;
+}
+.sixth-color-two {
+    color: coral;
+}
+.sixth-color-three {
+    color: gold;
+}
+.seventh-colors {
+    display: block;
+}
+.seventh-color-one {
+    color: orange;
+}
+.seventh-color-two {
+    color: yellowgreen;
+}
