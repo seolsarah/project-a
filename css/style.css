@@ -10,8 +10,8 @@ body {
 img {
     max-width: 100%;
     vertical-align: middle;
-    height: auto;
-    padding: 0 16px;
+    
+    padding: 0px;
 }
 img:hover {
     opacity: 0.5;
@@ -90,6 +90,11 @@ p, h3 {
     font-size: 24px;
     margin: 7px 0;
 }
+.top-products {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+}
 /* First product
 ---------------------------*/
 .first-product {
@@ -104,7 +109,7 @@ p, h3 {
 /* Second product
 ---------------------------*/
 .second-product {
-     vertical-align: middle;
+    vertical-align: middle;
 }
 .second-color-one {
     color: lightseagreen;
@@ -129,12 +134,19 @@ p, h3 {
 .third-color-three {
     color: darkcyan;
 }
+/* Bottom products
+---------------------------*/
+.bottom-products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.item {
+    flex-basis: 50%;
+    margin: 0%;
+}
 /* Fourth & Fifth product
 ---------------------------*/
-.fourth-fifth-product {
-    width: 50%;
-    float: left;
-}
 .fourth-colors {
     display: block;
 }
@@ -155,10 +167,6 @@ p, h3 {
 }
 /* Sixth & Seventh product
 ---------------------------*/
-.sixth-seventh-product {
-    width: 50%;
-    float: right;
-}
 .sixth-colors {
     display: block;
 }
@@ -219,3 +227,42 @@ a {
 .copyright {
     color: white;
 }
+
+@media screen and (min-width: 600px) {
+    .top-products {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .first-product, .second-product, .third-product {
+        flex-basis: calc(50% -1em);
+    }
+    img.responsive { width: 290px; }
+    img.responsive { height: 435px; }
+    
+    /*img.resize { width: 40px; }
+    img.resize { height: 50px; }*/
+}
+@media screen and (min-width: 750px) {
+    .top-products {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .first-product, .second-product, .third-product {
+        flex-basis: calc(33.3333% -1em);
+    }
+    img.responsive { width: 230px; }
+    img.responsive { height: 345px; }
+
+    img.resize { width: 200px; }
+    img.resize { height: 250px; }
+    
+    .item {
+        flex-basis: 25%;
+    }
+}
+ 
+
